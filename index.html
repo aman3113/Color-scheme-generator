@@ -14,33 +14,33 @@
     <div class="container">
       <div class="main display">
         <input type="color" id="color-picker" />
-        <input list="color-choose" id="color-type" />
-
-        <datalist id="color-choose">
-          <option value="Monochrome"></option>
-          <option value="Monochrome-dark"></option>
-          <option value="Monochrome-light"></option>
-          <option value="Analogic"></option>
-          <option value="Complement"></option>
-          <option value="Analogic-Complement"></option>
-          <option value="Triad"></option>
-          <option value="Quad"></option>
-        </datalist>
+        <select title="color " name="color-type" id="color-type">
+          <option value="Monochrome" selected>Monochrome</option>
+          <option value="Monochrome-dark">Monochrome-dark</option>
+          <option value="Monochrome-light">Monochrome-light</option>
+          <option value="Analogic">Analogic</option>
+          <option value="Complement">Complement</option>
+          <option value="Analogic-Complement">Analogic-Complement</option>
+          <option value="Triad">Triad</option>
+          <option value="Quad">Quad</option>
+        </select>
         <button id="getColor-btn">Get Color Scheme</button>
       </div>
-      <div class="color-display display">
-        <div class="color-image"></div>
-        <div class="color-image"></div>
-        <div class="color-image"></div>
-        <div class="color-image"></div>
-        <div class="color-image"></div>
-      </div>
-      <div class="hex-footer display">
-        <div class="hex-code"></div>
-        <div class="hex-code"></div>
-        <div class="hex-code"></div>
-        <div class="hex-code"></div>
-        <div class="hex-code"></div>
+      <div class="sub-container">
+        <div class="color-display display">
+          <div class="color-image" style="background-color: #797777"></div>
+          <div class="color-image" style="background-color: #4d4d4d"></div>
+          <div class="color-image" style="background-color: #222222"></div>
+          <div class="color-image" style="background-color: #191919"></div>
+          <div class="color-image" style="background-color: #000000"></div>
+        </div>
+        <div class="hex-footer display">
+          <div class="hex-code">#797777</div>
+          <div class="hex-code">#4d4d4d</div>
+          <div class="hex-code">#222222</div>
+          <div class="hex-code">#191919</div>
+          <div class="hex-code">#000000</div>
+        </div>
       </div>
     </div>
     <script src="app.js"></script>
