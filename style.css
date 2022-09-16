@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 310px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 311px) {
+  .container {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 50vw;
+  }
+}
+
+.container {
+  max-width: 600px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.display {
+  display: flex;
+}
+
+/* Row 1 */
+
+.main {
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.main #color-picker {
+  width: 20%;
+}
+
+.main .color-choose {
+  width: 40%;
+  padding: 5px;
+}
+
+.main #getColor-btn {
+  width: 25%;
+  padding: 5px;
+}
+
+/* Row 2 */
+
+.color-display,
+.hex-footer {
+  width: 100%;
+}
+
+.color-display .color-image {
+  width: 20%;
+  height: 40vh;
+  border: 1px solid red;
+}
+
+/* Row 3 */
+
+.hex-footer .hex-code {
+  width: 20%;
+  height: 8vh;
+  border: 1px solid green;
+}
