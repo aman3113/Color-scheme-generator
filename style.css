@@ -108,3 +108,12 @@ h1 {
 .hex-code {
   border: 0.1px solid rgb(48, 42, 42);
 }
+
+footer {
+  text-align: center;
+}
+footer a i {
+  margin: 20px 0 20px 30px;
+  font-size: 50px;
+  color: black;
+}
